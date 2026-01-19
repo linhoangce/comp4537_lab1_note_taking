@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Writer - Note Trekking</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="/css/writer.css"
+		/>
+		<script
+			src="/js/writer.js"
+			type="module"
+		></script>
+	</head>
+
+	<body>
+		<div class="writer-container">
+			<div class="header">
+				<h2>Writer - Create Notes</h2>
+				<div
+					class="last-saved"
+					id="lastSaved"
+				>
+					Not saved yet
+				</div>
+			</div>
+
+			<div id="notesContainer"></div>
+
+			<button
+				class="btn btn-primary add-note-btn"
+				id="addNoteBtn"
+			>
+				Add Note
+			</button>
+			<button
+				class="btn btn-secondary back-btn"
+				onclick="window.location.href = 'index.html'"
+			>
+				Back to Home
+			</button>
+		</div>
+	</body>
+</html>
