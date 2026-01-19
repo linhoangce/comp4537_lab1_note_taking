@@ -3,6 +3,8 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+index.js
+
 # Environment variables
 .env
 .env.local
