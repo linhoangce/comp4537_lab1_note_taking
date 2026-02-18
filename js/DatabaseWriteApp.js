@@ -45,6 +45,11 @@ export default class DatabaseWriteApp {
 		const sqlQuery = this.queryInput.value;
 		const displayElement = document.getElementById("query-response");
 
+		if (sqlQuery === "") {
+			displayElement.innerHTML = "Please enter your query!";
+			return;
+		}
+
 		// encode SQL query as a URL parameter
 		const url = `${this.host}${this.queryEndpoint}?sql=${encodeURIComponent(sqlQuery)}`;
 
